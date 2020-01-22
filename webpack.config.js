@@ -28,6 +28,11 @@ let config = {
         publicPath: "/dist/",
     },
 
+    devServer: {
+        contentBase: path.resolve('./'),
+        watchContentBase: true
+    },
+
     watch: dev,
     devtool: dev ? "cheap-module-eval-source-map" : false,
 

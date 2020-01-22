@@ -1,9 +1,10 @@
 const path = require('path')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const dev = process.env.NODE_ENV === "dev"
 
 let cssLoaders = [
-    'style-loader',
+    MiniCssExtractPlugin.loader,
     { loader: 'css-loader', options: { importLoaders: 1 } }
 ]
 
@@ -11,29 +12,24 @@ if (!dev) {
     cssLoaders.push(
         {
             loader: 'postcss-loader',
-            options: {
-                plugins: (loader) => [
-                    require('autoprefixer')({
-                        browsers: ['last 2 versions', 'ie > 8']
-                    })
-                ]
-            }
         }
     )
 }
 
 let config = {
 
-    entry: './assets/js/app.js',
+    entry: {
+        app: './assets/js/app.js',
+    },
 
     output: {
         path: path.resolve('./dist'),
-        filename: 'bundle.js',
+        filename: '[name].js',
         publicPath: "/dist/",
     },
 
     watch: dev,
-    devtool: dev ? "cheap-module-eval-source-map" : "source-map",
+    devtool: dev ? "cheap-module-eval-source-map" : false,
 
     module: {
         rules: [
@@ -63,6 +59,9 @@ let config = {
         ]
     },
     plugins: [
+        new MiniCssExtractPlugin({
+            filename: '[name].css'
+        })
     ],
 
     mode: 'development'
@@ -71,7 +70,7 @@ let config = {
 
 if (!dev) {
     config.plugins.push(new UglifyJSPlugin({
-        sourceMap: true
+        sourceMap: false
     }))
 }
 

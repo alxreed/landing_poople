@@ -1,4 +1,4 @@
-import css from './app.scss'
+import css from '../sass/app.scss'
 
 console.log('yooooooo')
 

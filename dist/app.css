@@ -309,6 +309,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+body {
+  font-family: 'Montserrat', sans-serif; }
+
 @font-face {
   font-family: "Montserrat";
   src: url(/dist/fonts/798e963a269e84c8d39ec63f1965734d.woff) format("woff");
@@ -403,7 +406,7 @@ html {
   font-family: "Montserrat";
   src: url(/dist/fonts/80393710ad6954d0e378173b89df3ea0.woff) format("woff");
   font-weight: 600;
-  font-style: normal; }
+  font-style: italic; }
 
 @font-face {
   font-family: "Montserrat";
@@ -417,9 +420,128 @@ html {
   font-weight: 100;
   font-style: italic; }
 
-header h1 {
-  font-family: "Montserrat";
-  font-style: normal;
-  text-transform: uppercase;
-  color: red; }
+header {
+  margin: 0 auto;
+  background-image: linear-gradient(110.1deg, rgba(87, 148, 150, 0.85) 14.69%, rgba(146, 242, 244, 0.85) 81.77%), url(/dist/images/3bdf584bcbd29a4b58e7ef1829653f38.png);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  min-height: 250px;
+  display: flex;
+  position: relative; }
+  header .header-content {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10vw;
+    text-align: start;
+    width: 70%; }
+    header .header-content svg {
+      width: 117.5px;
+      height: 93.5px; }
+    header .header-content h1 {
+      margin: 20px 0 0 0;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-size: 2.5em;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: white; }
+    header .header-content p {
+      margin: 0;
+      font-size: 1.3em;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 600; }
+  header nav {
+    position: absolute;
+    top: 40px;
+    right: 40px; }
+
+section.ppp {
+  display: flex;
+  margin-top: 50px;
+  align-items: baseline;
+  padding: 0 20px 0 20px; }
+  section.ppp article.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%; }
+    section.ppp article.action svg {
+      margin-bottom: 20px; }
+    section.ppp article.action .action-text::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: #7ACDCD;
+      border-radius: 50%;
+      position: absolute;
+      top: calc(10px * -0.5);
+      left: calc(50% - (10px/2)); }
+    section.ppp article.action svg.picto-toilette {
+      width: 56.25px;
+      height: 80px; }
+    section.ppp article.action svg.picto-telephone {
+      width: 41.75px;
+      height: 80px; }
+    section.ppp article.action svg.picto-paperplane {
+      width: 72.5px;
+      height: 80px; }
+    section.ppp article.action .action-text {
+      position: relative;
+      border-top: 1px solid #7ACDCD60;
+      padding-top: 20px;
+      color: #7ACDCD;
+      text-align: center; }
+      section.ppp article.action .action-text h2 {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        font-weight: bold; }
+      section.ppp article.action .action-text p {
+        margin: 0 auto;
+        font-size: 0.5em;
+        width: 80%; }
+
+section.demo-app {
+  margin-top: 50px; }
+  section.demo-app h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #7ACDCD;
+    font-size: 1em; }
+    section.demo-app h2 svg {
+      height: 60px; }
+  section.demo-app h2::first-line {
+    font-size: 200%; }
+  section.demo-app article {
+    background-image: url(/dist/images/57f4fca17bc4d47a1df0abd9330d9172.png);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    display: flex; }
+  section.demo-app img {
+    margin: auto;
+    width: 300px; }
+
+section.section-video {
+  margin-top: 50px; }
+  section.section-video h2 {
+    text-transform: uppercase;
+    color: #7ACDCD;
+    text-align: center;
+    font-size: 1.5em; }
+  section.section-video svg {
+    height: 60px; }
+  section.section-video article.video-papier {
+    background-image: url(/dist/images/e89b2d7ff8bebf570bbff28ca2229fb4.png);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    display: flex; }
+  section.section-video video {
+    width: 250px;
+    margin: auto; }
 

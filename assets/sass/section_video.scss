@@ -1,0 +1,25 @@
+section.section-video {
+    margin-top: 50px;
+    h2 {
+        text-transform: uppercase;
+        color: #7ACDCD;
+        text-align: center;
+    }
+
+    svg {
+        height: 60px;
+    }
+
+    article.video-papier {
+        background-image: url("../images/Mask\ Grouptexture-papier.png");
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+        display: flex;
+    }
+
+    video {
+        width: 250px;
+        margin: auto;
+    }
+}

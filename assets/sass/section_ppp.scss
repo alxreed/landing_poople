@@ -22,6 +22,8 @@ section.ppp {
             border-radius: 50%;
             position: absolute;
             top: calc(#{$point-size} * -0.5);
+            left: calc(50% - (#{$point-size}/2));
+
         }
         
         svg.picto-toilette {

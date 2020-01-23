@@ -1,0 +1,26 @@
+section.demo-app {
+    margin-top: 50px;
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #7ACDCD;
+        font-size: 1em;
+        svg {
+            height: 60px;
+        }
+    }
+    h2::first-line {
+        font-size: 200%;
+    }
+    article {
+        background-image: url("../images/Group\ 7toile-poop.png");
+        background-position: center;
+        background-size: cover;
+        height: 30vh;
+        display: flex;
+    }
+    img {
+        margin: auto;
+        width: 300px;
+    }
+}

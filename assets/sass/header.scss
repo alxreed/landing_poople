@@ -1,9 +1,44 @@
 header {
-    h1 {
-        font-family: "Montserrat";
-        font-style: normal;
-        text-transform: uppercase;
-        color: red;
+    margin: 0 auto;
+    background-image: linear-gradient(110.1deg, rgba(87, 148, 150, 0.85) 14.69%, rgba(146, 242, 244, 0.85) 81.77%),
+        url("../images/banner-toilette.png");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    min-height: 250px;
+    display: flex;
+    position: relative;
+    .header-content {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 10vw;
+        text-align: start;
+        width: 70%;
+        svg {
+            width: 117.5px;
+            height: 93.5px;
+        }
+        h1 {
+            margin: 20px 0 0 0;
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-size: 2.5em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+        }
+        p {
+            margin: 0;
+            font-size: 1.3em;
+            color: white;
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+        }
+    }
+    nav {
+        position: absolute;
+        top: 40px;
+        right: 40px;
     }
 }
-

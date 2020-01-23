@@ -1,0 +1,59 @@
+$point-size: 10px;
+
+section.ppp {
+    display: flex;
+    margin-top: 50px;
+    align-items: baseline;
+    padding: 0 20px 0 20px;
+    article.action {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
+        svg {
+            margin-bottom: 20px;
+        }
+        
+        .action-text::before {
+            content: "";
+            width: $point-size;
+            height: $point-size;
+            background-color: #7ACDCD;
+            border-radius: 50%;
+            position: absolute;
+            top: calc(#{$point-size} * -0.5);
+        }
+        
+        svg.picto-toilette {
+            width: 56.25px;
+            height: 80px;
+        }
+        svg.picto-telephone {
+            width: 41.75px;
+            height: 80px;
+        }
+        svg.picto-paperplane {
+            width: 72.5px;
+            height: 80px;
+        }
+        .action-text {
+            position: relative;
+            border-top: 1px solid #7ACDCD60;
+            padding-top: 20px;
+            color: #7ACDCD;
+            text-align: center;
+            h2 {
+                margin: 0;
+                margin-bottom: 10px;
+                font-size: 0.8em;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            p {
+                margin: 0 auto;
+                font-size: 0.5em;
+                width: 80%;
+            }
+        }
+    }
+}
